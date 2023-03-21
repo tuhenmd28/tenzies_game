@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 .App {
   text-align: center;
 }
@@ -5,6 +6,9 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+body{
+  font-family:'karla',sans-serif;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -35,4 +39,58 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.main_contain{
+  background-color: white;
+  border: 7px solid #78bb7b;
+  height: auto;
+  border-radius: 10px;
+  padding: 30px;
+  width: min-content;
+}
+.title{
+  color: black;
+  margin: 0;
+  font-size:40px;
+  font-weight: 700;
+}
+.text{
+  color: #282c34;
+  margin: 5px 0 30px;
+}
+.dies_wrap{
+  display: grid;
+  grid-template: auto auto/repeat(5,1fr);
+  grid-gap: 20px;
+}
+.die_box h3{
+  font-size: 30px;
+  margin: 0;
+}
+.die_box{
+  color: black;
+  background-color: white;
+  box-shadow: 0 0 10px 2px #00000055;
+  border-radius: 5px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.roll{
+  box-shadow: 0 0 10px 2px rgba(17, 154, 110,0.5);
+  display: inline-block;
+  margin-top: 40px;
+  padding: 10px 20px;
+  font-size: 25px;
+  font-weight: 700;
+  background: #452BF8;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
